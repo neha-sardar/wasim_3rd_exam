@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "amiri";
+    src: url("fonts/amiri/Amiri-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+:root {
+    --main-white: #ffff;
+    --black: #0D0D0D;
+    --gray: #95A986;
+    --text-gray: #707070;
+}
+
+body {
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.56;
+
+}
+
+.container {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col100 {
+    position: relative;
+    max-width: 100%;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.col60 {
+    max-width: 60%;
+    flex: 0 0 60%;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.col50 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.col40 {
+    max-width: 40%;
+    flex: 0 0 40%;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    background-color: var(--black);
+}
+
+.free-shipping {
+    background-color: black;
+    color: var(--main-white);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 6px;
+    font-family: "poppins";
+    font-size: 14px;
+    gap: 10px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation {
+    margin: auto;
+    margin-right: 10px;
+}
+
+.navlinks li a {
+    margin: 30px;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* color: var(--main-white); */
+    transition: 0.4s ease-in all;
+}
+
+.navlinks li a:hover {
+    color: var(--black);
+}
+
+.icon {
+    margin-left: 78px;
+    margin: 22px;
+}
+
+/* banner  */
+.banner {
+    min-height: 903px;
+    background: url("./images/banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    /* margin: 55px 0; */
+}
+
+.banner-text {
+    width: 793px;
+    height: 371px;
+    background-color: var(--main-white);
+
+    border-radius: 20px;
+
+}
+
+.banner-text h1 {
+    font-family: "amiri";
+    font-size: 68px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black);
+    line-height: 1.22;
+    margin-top: 75px 0;
+    margin: 20px 0;
+
+}
+
+.banner-text p {
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 1.56;
+    text-align: center;
+    margin: 30px;
+}
+
+.ban-btn {
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 260px;
+
+}
+
+.cmn-btn {
+    font-family: "poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 5.11;
+    letter-spacing: 24%;
+    background-color: var(--gray);
+    padding: 30px;
+    color: var(--black);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 50px;
+
+}
+
+.cmn-btn:hover {
+    background-color: var(--black);
+    color: var(--main-white);
+}
+
+
+/* about */
+
+.about {
+    margin: 105px 0;
+    display: flex;
+
+}
+
+.text {
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+    letter-spacing: 20%;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.about-text h2 {
+    font-family: "amiri";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.33;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+
+}
+
+.about-text p {
+    margin-bottom: 24px;
+    color: var(--text-gray);
+    font-family: "poppins";
+
+}
+
+.about-img,
+.Our-mission {
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    margin: 10px;
+
+
+}
+
+.our-text h2 {
+    font-family: "amiri";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.11;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 72px;
+}
+
+.Our-mission p {
+    margin-bottom: 24px;
+    color: var(--text-gray);
+    font-family: "poppins"
+}
